@@ -4,12 +4,12 @@ import { ArrowUpRight, Github, Mail, Phone, Code2, Layers3, Sparkles, MonitorSma
 import "./styles.css";
 
 const skills = [
-  ["Frontend", "React.js", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3"],
-  ["UI & Styling", "Material UI", "Tailwind CSS", "Bootstrap", "Responsive Design", "React Hooks"],
-  ["State & APIs", "Redux Toolkit", "Context API", "REST APIs", "Axios", "JSON"],
-  ["Testing & Tools", "Jest", "React Testing Library", "Cypress", "Git", "GitHub", "Webpack"],
-  ["AI Experiences", "LLM APIs", "Generative AI", "RAG", "AI Search", "Conversational UI"],
-  ["Delivery", "AWS", "Docker", "CI/CD", "GitHub Actions", "Jenkins", "Agile / Scrum"]
+  ["Frontend", "React.js", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3", "Responsive Design"],
+  ["UI & Styling", "Material UI", "Tailwind CSS", "Bootstrap", "React Hooks", "Component Libraries"],
+  ["AI / LLM", "Generative AI", "LLM APIs", "Prompt Engineering", "RAG", "AI Chatbots", "AI Search", "Embeddings", "Conversational UI"],
+  ["State & APIs", "Redux", "Redux Toolkit", "Context API", "REST APIs", "JSON", "Axios", "API Integration"],
+  ["Testing & Tools", "Jest", "React Testing Library", "Cypress", "Git", "GitHub", "VS Code", "npm", "Webpack"],
+  ["Cloud & Delivery", "AWS", "Docker", "CI/CD", "GitHub Actions", "Jenkins", "Agile", "Scrum", "SDLC"]
 ];
 
 const experience = [
@@ -41,7 +41,7 @@ const experience = [
     period: "Jan 2021 – Dec 2022",
     points: [
       "Worked with HTML, JavaScript and CSS to support web-based reporting and user-facing interfaces.",
-      "Used Jenkins to automate build and test workflows and generate daily test reports."
+      "Used Jenkins to automate build and test workflows, run tests and generate daily test reports."
     ]
   }
 ];
@@ -130,8 +130,8 @@ function App() {
           <div className="about-grid">
             <h2>Code that feels<br /><em>as good as it works.</em></h2>
             <div className="about-copy">
-              <p>I'm a frontend developer with 4+ years of experience building responsive, scalable and high-performance web applications. I enjoy turning complex requirements into clear, accessible and intuitive interfaces.</p>
-              <p>My experience includes enterprise healthcare and financial applications, API integrations, reusable component architecture, automated testing and AI-enabled user experiences. I value thoughtful collaboration with design, product and backend teams.</p>
+              <p>I'm a Frontend Developer with 4+ years of experience building responsive, scalable and high-performance web applications using React.js, TypeScript, JavaScript and Next.js. I enjoy turning complex requirements into clear, accessible and intuitive interfaces.</p>
+              <p>My experience includes enterprise healthcare and financial applications, Generative AI and LLM integrations, prompt engineering, AI-powered search, RAG-based experiences, reusable components and automated testing. I work closely with backend, product, UX/UI and AI teams in Agile environments.</p>
             </div>
           </div>
         </section>
