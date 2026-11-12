@@ -46,11 +46,13 @@ const experience = [
   }
 ];
 
+
 const projects = [
   {
     icon: <MonitorSmartphone size={20} />,
     type: "PORTFOLIO DEMO",
     title: "Responsive Product Dashboard",
+    url: "https://dhanushchimma.github.io/responsive-product-dashboard/",
     description: "A demonstration dashboard concept featuring responsive layouts, reusable UI patterns, data cards, filtering and accessible navigation.",
     stack: ["React", "TypeScript", "CSS", "Responsive UI"],
     note: "Independent demonstration project"
@@ -59,6 +61,7 @@ const projects = [
     icon: <Layers3 size={20} />,
     type: "PORTFOLIO DEMO",
     title: "Component Library Showcase",
+    url: "https://dhanushchimma.github.io/component-library-showcase/",
     description: "A small UI showcase demonstrating reusable buttons, form controls, cards, navigation elements and consistent design tokens.",
     stack: ["React", "Material UI concepts", "CSS", "Component Design"],
     note: "Independent demonstration project"
@@ -67,6 +70,7 @@ const projects = [
     icon: <Sparkles size={20} />,
     type: "PORTFOLIO DEMO",
     title: "AI Assistant Interface",
+    url: "https://dhanushchimma.github.io/ai-assistant-interface/",
     description: "A frontend concept for a conversational assistant, with message states, prompt suggestions and a clean chat experience.",
     stack: ["React", "TypeScript", "REST API concepts", "Conversational UI"],
     note: "Independent demonstration project"
@@ -160,14 +164,40 @@ function App() {
         <section className="section projects-section" id="projects">
           <div className="section-kicker">04 / SELECTED WORK</div>
           <div className="section-heading"><h2>Concepts & <em>showcases.</em></h2><p>Independent portfolio demonstrations that illustrate frontend skills. These are not presented as employer projects.</p></div>
-          <div className="projects-grid">
-            {projects.map(project => <article className="project-card" key={project.title}>
-              <div className="project-top"><div className="project-icon">{project.icon}</div><span>{project.type}</span></div>
-              <h3>{project.title}</h3><p>{project.description}</p>
-              <div className="chips">{project.stack.map(s => <span key={s}>{s}</span>)}</div>
-              <div className="project-note">{project.note}</div>
-            </article>)}
-          </div>
+
+<div className="projects-grid">
+  {projects.map(project => (
+    <a
+      className="project-card"
+      key={project.title}
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: "block",
+        color: "inherit",
+        textDecoration: "none",
+        cursor: "pointer"
+      }}
+    >
+      <div className="project-top">
+        <div className="project-icon">{project.icon}</div>
+        <span>{project.type}</span>
+      </div>
+
+      <h3>{project.title}</h3>
+      <p>{project.description}</p>
+
+      <div className="chips">
+        {project.stack.map(s => <span key={s}>{s}</span>)}
+      </div>
+
+      <div className="project-note">
+        {project.note} · Click to explore ↗
+      </div>
+    </a>
+  ))}
+</div>
         </section>
 
         <section className="contact-section" id="contact">
